@@ -10,8 +10,17 @@ Thes app is meant to be used with node from command line. The CLI utilizes inqui
 
 ### Gif Examples
 
+![Alt Text](images/word_guess_CLI_correct.gif)
 
+![Alt Text](images/word_guess_CLI_wrong.gif)
 
 ### How the Code Works
 
 NPM packages and user input is managed in index.js with the actual JS functions being called in index.js from word.js and letter.js as modules using the require function. 
+
+#### 1. Index.js
+
+Index.js handles user input, inquirer, and radom-words packe managers. It first takes a single random word from random-words and creates a fill-in-the-blanks array used to represent blank letter for the user to guess. It then calls an inquirer function called guess() that takes user input and tests if it's a single character to be taken as a guess and if so passes it, the word, and blank word array into word.js. guess() is then called recursively to run again after input is tested and displayed in the other JS files. Process.exit(0) is used to exit node once the game is won or lost in letter.js or word.js.
+
+#### 2. Word.js
+
