@@ -10,9 +10,9 @@ Thes app is meant to be used with node from command line. The CLI utilizes inqui
 
 ### Gif Examples
 
-![Alt Text](images/word_guess_CLI_correct.gif)
+![Alt Text](images/word-guess-CLI-correct.gif)
 
-![Alt Text](images/word_guess_CLI_wrong.gif)
+![Alt Text](images/word-guess-CLI-wrong.gif)
 
 ### How the Code Works
 
